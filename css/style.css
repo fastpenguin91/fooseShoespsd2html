@@ -7,33 +7,50 @@ body {
 
 #header {
     background: #242424;
+    height: 45px;
 }
 
 #logo {
     color: #57c5a0;
     display: inline-block;
-    padding: 12px 0px 12px 20px;
+    padding: 0px 12px;
+    font-size: 26px;
+    margin: 10px 0px 0px 20px;
 }
 
-#headerSub2 {
+#loginButtonWrapper {
+    border-left: 8px solid red;
     display: inline-block;
+    height: 100%;
     float: right;
 }
 
-#searchIcon {
-    padding-right: 20px;
-}
-
-#loginWrapper {
-    display: inline-block;
-    padding: 10px 20px 14px 20px;
-    border-left: #383838 2px solid;
-    border-right: #383838 2px solid;
-}
-
-a#loginButton {
+#loginButton {
+    float: right;
     color: #7e7e7e;
-    
-    padding-top: 12px;
-    padding-bottom: 22px;
+    height: 100%;
+    padding: 0px 20px;
+    margin: 15px 15px 0px 0px;
+    font-size: 16px;
+}
+
+#searchIcon {
+    margin: 15px 20px;
+    float: right;
+}
+
+#nav {
+    float: left;
+    padding: 0px 20px;
+}
+
+#nav li {
+    float: left;
+    padding: 6px 22px;
+    border-left: #eeeeee 2px solid;
+    font-size: 16px;
+}
+
+#nav ul li:last-child {
+    border-right: #eee 2px solid;
 }
