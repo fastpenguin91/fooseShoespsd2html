@@ -1,8 +1,6 @@
-html {
-
-}
-
-body {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #header {
@@ -39,18 +37,272 @@ body {
     float: right;
 }
 
+#navWrapper {
+    background: yellow;
+    height: 60px;
+    padding-left: 200px;
+}
+
 #nav {
     float: left;
     padding: 0px 20px;
+    height: 100%;
 }
 
-#nav li {
+#nav ul {
+    height: 100%;
+}
+
+#nav ul li {
     float: left;
-    padding: 6px 22px;
+    padding: 0px 22px 0px 22px; /*Top & bottom padding supposed to be 6??*/
     border-left: #eeeeee 2px solid;
     font-size: 16px;
+    height: 100%;
+}
+
+#nav ul li a {
+    line-height: 50px;
 }
 
 #nav ul li:last-child {
     border-right: #eee 2px solid;
+}
+
+#nav2 {
+    float: right;
+    margin-right: 100px;
+    height: 100%;
+}
+
+#nav2 ul {
+    height: 100%;
+}
+
+#nav2 ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    border-right: 2px solid red;
+    height: 100%;
+    line-height: 50px;
+}
+
+.navIcons {
+    padding-right: 20px;
+}
+
+#starText {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#cartText {
+    background-color: #57c5a0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#bannerImage {
+    background: url(../assets/fooseLady.jpg) no-repeat;
+    height: 460px;
+}
+
+#bannerBlock {
+    position: relative;
+    top: 70px;
+    left: 735px;
+    margin-right: 735px;
+    max-width: 100%;
+}
+
+#bannerPrice {
+    padding: 25px 9px 25px 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-color: #57c5a0;
+    display: inline-block;
+}
+
+#bannerBigText {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+#bannerLittleText {
+    font-size: 20px;
+}
+
+#bannerIcons li {
+    float: left;
+    padding: 15px;
+    background-color: #fafaf9;
+    margin: 20px 2px 0px 2px;
+    margin-top: 20px;
+}
+
+#bannerIcons #eyeIcon {
+    padding: 3px 0px 3px 0px;
+}
+
+#bannerIcons #shareIcon {
+    padding: 1.5px 0px 1.5px 0px;
+}
+
+#bannerIcons #cartArrowIcon {
+    padding: 0.5px 0px 0.5px 0px;
+}
+
+#shoppingNav {
+    background: #2e2e2e;
+    display: block;
+    height: 60px;
+    padding-left: 200px;
+    padding-bottom: 25px;
+}
+
+#shoppingNav li {
+    float: left;
+    padding-top: 5px;
+    width: 195px;
+}
+
+.shoppingNavliWrapper {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.mainText {
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+.minorText {
+    font-size: 12px;
+    color: #f5f5f5;
+}
+
+.bar {
+    display: block;
+    height: 10px;
+    background: #000000;
+    width: 90%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.selected .selectedBar {
+    display: block;
+    height: 5px;
+    background: #57c5a0;
+}
+
+#offers {
+    padding-top: 20px;
+    background: #242424;
+}
+
+#offersList {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#offersList li {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+    /*padding: 90px 150px;*/
+    height: 180px;
+    width: 300px;
+}
+
+#onSaleBG {
+    background: url(../assets/onSalebg.png) no-repeat;
+}
+
+#specialOffersBG {
+    background: url(../assets/specialOffersbg.png) no-repeat;
+}
+
+#mustHaveBG {
+    background: url(../assets/mustHavebg.png) no-repeat;
+}
+
+.offers {
+    background: yellow;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.showAllBTN {
+    padding: 5px;
+    background:yellow;
+    text-decoration: none;
+    float: right;
+}
+
+#arrivals {
+    background: lightblue;
+}
+
+.newArrivalsWrapper {
+    border-top: 2px solid red;
+}
+
+.newArrivals {
+    display: inline-block;
+    width: 100%;
+    margin-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.arrivalItems {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    margin-left: 15px;
+}
+
+#bannerPrice2 {
+    position: absolute;
+    top: 200px;
+    padding: 25px 9px 25px 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-color: #57c5a0;
+    display: inline-block;
+}
+
+.boxes #smallDivs {
+    background: gray;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    margin: 15px;
+}
+
+.boxes #div3 {
+    width: 400px;
+    display: inline-block;
+}
+
+#greenBox {
+    background: green;
+    float: left;
+    display: inline-block;
+    padding: 15px;
+}
+
+#div3Child {
+    display: inline;
+    float: left;
 }
