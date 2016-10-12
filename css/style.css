@@ -1,24 +1,26 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background: #ebe7df;
 }
 
 #header {
     background: #242424;
     height: 45px;
+    padding-left: 100px;
 }
 
 #logo {
     color: #57c5a0;
     display: inline-block;
-    padding: 0px 12px;
     font-size: 26px;
     margin: 10px 0px 0px 20px;
 }
 
 #loginButtonWrapper {
-    border-left: 8px solid red;
+    border-left: 2px solid #cccccc;
     display: inline-block;
+    padding-right: 100px;
     height: 100%;
     float: right;
 }
@@ -27,9 +29,14 @@ html, body {
     float: right;
     color: #7e7e7e;
     height: 100%;
-    padding: 0px 20px;
-    margin: 15px 15px 0px 0px;
+    padding: 0px 0px 0px 20px;
+    margin: 15px 0px 0px 0px;
     font-size: 16px;
+}
+
+#navWrapper a {
+    color: #242424;
+    font-size: 19px;
 }
 
 #searchIcon {
@@ -38,9 +45,9 @@ html, body {
 }
 
 #navWrapper {
-    background: yellow;
+    background: #ffffff;
     height: 60px;
-    padding-left: 200px;
+    padding-left: 100px;
 }
 
 #nav {
@@ -82,7 +89,7 @@ html, body {
 #nav2 ul li {
     display: inline-block;
     padding: 0px 20px;
-    border-right: 2px solid red;
+    border-right: 2px solid #cccccc;
     height: 100%;
     line-height: 50px;
 }
@@ -120,7 +127,7 @@ html, body {
 #bannerPrice {
     padding: 25px 9px 25px 8px;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
     background-color: #57c5a0;
     display: inline-block;
 }
@@ -158,7 +165,8 @@ html, body {
     background: #2e2e2e;
     display: block;
     height: 60px;
-    padding-left: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 25px;
 }
 
@@ -169,7 +177,7 @@ html, body {
 }
 
 .shoppingNavliWrapper {
-    padding: 5px 20px;
+    padding: 15px 20px;
     text-align: center;
 }
 
@@ -187,8 +195,21 @@ html, body {
     display: block;
     height: 10px;
     background: #000000;
-    width: 90%;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bar2 {
+    display: block;
+    height: 2px;
+    background: #bcb5a7;
+    /*width: 100%;*/
+    margin-left: 100px;
+    margin-right: 100px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -202,13 +223,18 @@ html, body {
 #offers {
     padding-top: 20px;
     background: #242424;
+    color: #ffffff;
 }
 
 #offersList {
     list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    /*text-align:center;*/
+}
+
+#offersList li:first-child {
+    margin-left: 0px;
 }
 
 #offersList li {
@@ -216,6 +242,7 @@ html, body {
     position: relative;
     overflow: hidden;
     margin: 0 10px;
+    text-align: center;
     /*padding: 90px 150px;*/
     height: 180px;
     width: 300px;
@@ -234,75 +261,210 @@ html, body {
 }
 
 .offers {
-    background: yellow;
+    background: #2f3134;
+    opacity: 0.8;
+    padding: 20px 25px;
     display: inline-block;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px;
 }
 
 .showAllBTN {
-    padding: 5px;
-    background:yellow;
+    padding: 10px 20px;
+    border: 2px solid #bcb5a7;
+    margin-right: 100px;
+    color: #bcb5a7;
+    font-weight: bold;
     text-decoration: none;
     float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#arrivals {
-    background: lightblue;
-}
-
-.newArrivalsWrapper {
-    border-top: 2px solid red;
-}
-
-.newArrivals {
-    display: inline-block;
-    width: 100%;
+.anotherDiv {
+    height: 110px;
     margin-left: 100px;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
-.arrivalItems {
+.storeItems {
+    background: #ebe7df;
+}
+
+.storeItems li:first-child {
+    margin-left: 0px;
+}
+
+.storeItems li {
     display: inline-block;
     position: relative;
     width: 300px;
     margin-left: 15px;
+    vertical-align: top;
 }
 
 #bannerPrice2 {
     position: absolute;
-    top: 200px;
-    padding: 25px 9px 25px 8px;
+    top: 0px;
+    left: 210px;
+    padding: 20px 9px 20px 8px;
     margin-bottom: 20px;
     margin-left: 10px;
-    background-color: #57c5a0;
+    background-color: #f27e4b;
+    color: white;
     display: inline-block;
+    text-align: center;
 }
 
-.boxes #smallDivs {
-    background: gray;
+.bestSellers {
     display: inline-block;
-    float: left;
-    width: 300px;
-    margin: 15px;
+    font-size: 33px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.boxes #div3 {
-    width: 400px;
-    display: inline-block;
-}
-
-#greenBox {
-    background: green;
-    float: left;
-    display: inline-block;
+.date {
+    margin-bottom: 10px;
     padding: 15px;
+    background: #57c5a0;
+    text-align: center;
+    color: white;
+    margin-right: 10px;
 }
 
-#div3Child {
-    display: inline;
-    float: left;
+#section3 {
+    padding-left: 100px;
+}
+
+#section3 .small_section {
+    width: 215px;
+}
+
+#section3 h3 {
+    font-size: 19px;
+    margin-bottom: 18px;
+}
+
+#section3 div {
+    display: inline-block;
+}
+
+.large_section {
+    width: 490px;
+}
+
+#section3 .main {
+    background: #dfdbd4;
+    display: inline-block;
+    vertical-align: top;
+
+    padding-top: 33px;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-right: 13px;
+    margin-bottom: 20px;
+    height: 180px;
+}
+
+.footer {
+    background: #242424;
+    padding-top: 50px;
+    color: #939393;
+}
+
+.footer .footer_section1 {
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.footer .footer_section1 h3 {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.footer .footer_section1 .text_widget {
+    width: 285px;
+}
+
+.footer .footer_section1 li:first-child p {
+    padding-top: 0px;
+}
+
+.footer .footer_section1 li p {
+    padding: 5px 0px;
+}
+
+.footer #twitter_widget {
+    margin: 0px;
+    width: 310px;
+    padding: 0 0px;
+}
+
+.footer .footer_section1 div {
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 25px;
+    vertical-align: top;
+}
+
+.footer_section2 {
+    background: #242424;
+    height: 118px;
+    border-top: 3px solid #1c1c1c;
+}
+
+.footer_section2 div {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer_section2 .social_icons {
+    float: right;
+    margin-right: 100px;
+}
+
+.footer_section2 .newsLetterForm {
+    margin-left: 100px;
+}
+
+
+input[type=text] {
+    height: 30px;
+    width: 150px;
+    margin-right: 0px;
+    vertical-align: top;
+}
+
+input[type=image] {
+    padding: 12px;
+    margin-left: 0px;
+    background: #7d7d7d;
+}
+
+.footer_section3 {
+    color: #979797;
+    background: #2e2e2e;
+    height: 88px;
+}
+
+.footer_section3 div {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.copyright {
+    padding-left: 100px;
+}
+
+.footer_nav_links {
+    padding-right: 100px;
+    float: right;
 }
