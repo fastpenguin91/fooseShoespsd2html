@@ -165,9 +165,10 @@ html, body {
 #shoppingNav {
     background: #2e2e2e;
     display: block;
+    height: 60px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 #shoppingNav li {
@@ -221,9 +222,16 @@ html, body {
     background: #57c5a0;
 }
 
+/*#offers {
+    padding-top: 20px;
+    background: #242424;
+    color: #ffffff;
+    height: 215px;
+}*/
+
 #offers {
     display: flex;
-    padding: 0 100px;
+    /*width: 100%;*/
     flex-wrap: flex;
     background: #242424;
     color: #fff;
@@ -234,7 +242,7 @@ html, body {
     min-width: 0;
     margin: auto;
     position: relative;
-    text-align: center;
+    /*width: 100%;*/
 }
 
 #offers > div > p {
@@ -243,14 +251,59 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 5%;
-    opacity: 0.8;
-    background: #353636;
+    background: gray;
     margin: auto;
 }
 
 #offers > div > img {
     max-width: 100%;
     height: auto;
+}
+
+#offersList {
+    list-style:none;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    /*text-align:center;*/
+}
+
+#offersList li:first-child {
+    margin-left: 0px;
+}
+
+#offersList li {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 10px;
+    text-align: center;
+    /*padding: 90px 150px;*/
+    height: 180px;
+    width: 300px;
+    /*width: 33.3%;*/
+    float: left;
+}
+
+#onSaleBG {
+    background: url(../assets/onSalebg.png) no-repeat;
+}
+
+#specialOffersBG {
+    background: url(../assets/specialOffersbg.png) no-repeat;
+}
+
+#mustHaveBG {
+    background: url(../assets/mustHavebg.png) no-repeat;
+}
+
+.offers {
+    background: #2f3134;
+    opacity: 0.8;
+    padding: 20px 25px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .showAllBTN {
@@ -287,18 +340,6 @@ html, body {
     vertical-align: top;
 }
 
-.newArrivals {
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    flex-flow: row wrap;
-}
-
-.newArrivals > div {
-    margin: 15px auto;
-    position: relative;
-}
-
 #bannerPrice2 {
     position: absolute;
     top: 0px;
@@ -329,14 +370,8 @@ html, body {
     margin-right: 10px;
 }
 
-.blogNewsHeadline {
-    font-weight: bold;
-}
-
 #section3 {
-    padding-left: 8%;
-    display: flex;
-    flex-flow: row wrap;
+    padding-left: 100px;
 }
 
 #section3 .small_section {
@@ -349,7 +384,7 @@ html, body {
 }
 
 #section3 div {
-    display: inline-flex;
+    display: inline-block;
 }
 
 .large_section {
@@ -367,7 +402,7 @@ html, body {
     padding-bottom: 10px;
     margin-right: 13px;
     margin-bottom: 20px;
-    /*height: 180px;*/
+    height: 180px;
 }
 
 .footer {
@@ -484,6 +519,10 @@ input[type=image] {
 
 @media only screen and (max-width: 820px) {
 
+    body {
+        background: yellow;
+    }
+
     #offers {
         display: flex;
     }
@@ -498,6 +537,9 @@ input[type=image] {
 }
 
 @media only screen and (max-width: 650px) {
+    body {
+        background: green;
+    }
 
     #shoppingNav {
         padding-left: 1%;
