@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
         <title>title</title>
     </head>
     <body>
@@ -38,8 +39,8 @@
         </div>
         </div>
 
-        <div id="bannerImage">
-            <div id="bannerBlock">
+        <div id="bannerImage" class="section group">
+            <div id="bannerBlock" class="col span_12_of_12">
                 <p id="bannerPrice">$145.99</p>
                 <p id="bannerBigText">Pink Shoes<br> 2013 Collection</p>
                 <p id="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
@@ -52,8 +53,8 @@
             </div>
         </div>
 
-        <ul id="shoppingNav">
-            <li class="selected">
+        <ul id="shoppingNav" class="section group">
+            <li class="selected col span_2_of_12">
                 <span class="bar">
                     <span class="selectedBar"></span>
                 </span>
@@ -63,7 +64,7 @@
                     <span class="minorText">Now at $145.99</span>
                 </div>
             </li>
-            <li>
+            <li class="col span_2_of_12">
                 <span class="bar"></span>
                 <div class="shoppingNavliWrapper">
                     <span class="mainText">Anna Field</span>
@@ -71,7 +72,7 @@
                     <span class="minorText">Limited Edition</span>
                 </div>
             </li>
-            <li>
+            <li class="col span_2_of_12">
                 <span class="bar"></span>
                 <div class="shoppingNavliWrapper">
                     <span class="mainText">Prada</span>
@@ -79,7 +80,7 @@
                     <span class="minorText">Summer is coming</span>
                 </div>
             </li>
-            <li>
+            <li class="col span_2_of_12">
                 <span class="bar"></span>
                 <div class="shoppingNavliWrapper">
                     <span class="mainText">Casadei</span>
@@ -87,7 +88,7 @@
                     <span class="minorText">All Colors available</span>
                 </div>
             </li>
-            <li>
+            <li class="col span_2_of_12">
                 <span class="bar"></span>
                 <div class="shoppingNavliWrapper">
                     <span class="mainText">Mellow Yellow</span>
@@ -102,8 +103,12 @@
                 <li id="onSaleBG">
                     <div class="offers">On Sale</div>
                 </li>
-                <li id="specialOffersBG"><div class="offers">Special Offers</div></li>
-                <li id="mustHaveBG"><div class="offers">Must Have</div></li>
+                <li id="specialOffersBG">
+                    <div class="offers">Special Offers</div>
+                </li>
+                <li id="mustHaveBG">
+                    <div class="offers">Must Have</div>
+                </li>
             </ul>
         </div>
 
