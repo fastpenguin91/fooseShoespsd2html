@@ -132,6 +132,7 @@ li.nav2 {
 
 #bannerImage {
     background: url(../assets/fooseLady.jpg) no-repeat;
+    /*background-position: -275px 0px;*/
     height: 460px;
 }
 
@@ -520,6 +521,22 @@ input[type=image] {
 
     #bannerBlock {
         margin-left: 5%;
+        text-align: center;
+    }
+
+    #bannerIcons {
+        text-align: center;
+    }
+
+    #bannerLittleText {
+        background: gray;
+        display: inline;
+        opacity: 0.8;
+    }
+
+    #bannerIcons li {
+        display: inline-block;
+        float: none;
     }
 }
 

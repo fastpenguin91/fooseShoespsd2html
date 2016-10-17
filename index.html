@@ -33,24 +33,22 @@
                 <li class="nav2"><div><img src="assets/cartIcon.png"/><span id="cartText">10</span></div></li>
             </ul>
 
-            <!--<div id="nav2">
-                <ul>
-                </ul>
-            </div>-->
         </div>
 
         <div id="bannerImage" class="section group">
-            <div id="bannerBlock" class="col span_12_of_12">
-                <p id="bannerPrice">$145.99</p>
-                <p id="bannerBigText">Pink Shoes<br> 2013 Collection</p>
-                <p id="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
-                <ul id="bannerIcons">
-                    <li><img id="eyeIcon" src="assets/eyeIcon.png"/></li>
-                    <li><img src="assets/starIcon.png"/></li>
-                    <li><img id="shareIcon" src="assets/shareIcon.png"/></li>
-                    <li><img id="cartArrowIcon" src="assets/cartArrowIcon.png"/></li>
-                </ul>
-            </div>
+            <!--<div style="background: yellow;" class="entireBannerBlock">-->
+                <div id="bannerBlock" class="col span_12_of_12">
+                    <p id="bannerPrice">$145.99</p>
+                    <p id="bannerBigText">Pink Shoes<br> 2013 Collection</p>
+                    <p id="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
+                    <ul class="clearfix" id="bannerIcons">
+                        <li><img id="eyeIcon" src="assets/eyeIcon.png"/></li>
+                        <li><img src="assets/starIcon.png"/></li>
+                        <li><img id="shareIcon" src="assets/shareIcon.png"/></li>
+                        <li><img id="cartArrowIcon" src="assets/cartArrowIcon.png"/></li>
+                    </ul>
+                </div>
+            <!--</div>-->
         </div>
 
         <ul id="shoppingNav" class="section group">
@@ -222,7 +220,29 @@
         </div>    
             
         
+<script>
+    function moveBG(){
+    var amt;
+    var backgroundPosition;
+    var defaultWidth = 1280;
 
+    amt = (defaultWidth - window.innerWidth)/3.2;
+    backgroundPosition = -amt;
+
+    var bg = document.getElementById('bannerImage');
+
+    bg.style.backgroundPosition = -amt + "px 0px";
+
+    /*console.log(amt);*/
+}
+
+moveBG();
+
+window.onresize = moveBG;
+
+
+
+</script>
 
     </body>
 </html>
