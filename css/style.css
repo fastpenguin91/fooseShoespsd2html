@@ -39,6 +39,13 @@ html, body {
     font-size: 19px;
 }
 
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
 #searchIcon {
     margin: 15px 20px;
     float: right;
@@ -46,21 +53,21 @@ html, body {
 
 #navWrapper {
     background: #ffffff;
-    height: 60px;
-    padding-left: 100px;
+    /*height: 60px;*/
+    padding-left: 8%;
 }
 
-#nav {
-    float: left;
+.top {
+    display: none;
+}
+
+.nav {
+    /*float: left;*/
     padding: 0px 20px;
     height: 100%;
 }
 
-#nav ul {
-    height: 100%;
-}
-
-#nav ul li {
+.nav li {
     float: left;
     padding: 0px 3%;
     /*padding: 0px 22px; /*Top & bottom padding supposed to be 6??*/
@@ -69,12 +76,21 @@ html, body {
     height: 100%;
 }
 
-#nav ul li a {
-    line-height: 50px;
+.nav li a {
+    line-height: 60px;
 }
 
-#nav ul li:last-child {
+.nav li:last-child {
     border-right: #eee 2px solid;
+}
+
+li.nav2 {
+    float: right;
+    padding: 0 3%;
+}
+
+.nav2 div {
+    line-height: 60px;
 }
 
 #nav2 {
@@ -102,6 +118,7 @@ html, body {
 #starText {
     background-color: #adadad;
     color: white;
+    margin-left: 5px;
     padding: 5px;
     border-radius: 10px;
 }
@@ -109,6 +126,7 @@ html, body {
 #cartText {
     background-color: #57c5a0;
     padding: 5px;
+    margin-left: 5px;
     border-radius: 10px;
 }
 
@@ -559,6 +577,8 @@ input[type=image] {
     }
 }
 
+
+
 @media only screen and (max-width: 730px) {
 
     .anotherDiv {
@@ -576,5 +596,47 @@ input[type=image] {
     .showAllBTN {
         float: none;
         margin-right: 0;
+    }
+}
+/* @667px */
+@media only screen and (max-width: 936px) {
+
+    #navWrapper {
+        padding-left: 3%;
+    }
+
+    .nav li {
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    #navWrapper {
+        padding-left: 0;
+    }
+
+    #loginButtonWrapper, #searchIcon {
+        display: none;
+    }
+
+    #header {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .top {
+        display: list-item;
+    }
+
+    .nav {
+        padding: 0 0;
+    }
+
+    .nav li {
+        width: 100%;
+        padding: 0 0;
+        border-bottom: 1px solid black;
+        border-left: none;
+        text-align: center;
     }
 }
