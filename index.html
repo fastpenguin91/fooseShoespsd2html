@@ -3,24 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+        <link rel="stylesheet" href="css/main.css">
         <title>title</title>
     </head>
     <body>
         <div id="header">
-            <h3 id="logo">FOOSESHOES</h3>
+            <h3>FOOSESHOES</h3>
 
             <div id="loginButtonWrapper">
                 <div id="loginButton">LOGIN or REGISTER</div>
             </div>
 
-            <img src="assets/searchIcon.png" id="searchIcon"/>
+            <img src="assets/searchIcon.png"/>
 
         </div>
 
-        <div id="navWrapper" class="clearfix">
-            <ul class="nav">
+        <div class="navigation  clearfix">
+            <div class="menuIcon" onclick="showHideMenu()">
+                <div id="menuIcon1"></div>
+                <div id="menuIcon2"></div>
+                <div id="menuIcon3"></div>
+            </div>
+            <!--id topMenu is for javaScript -->
+            <ul class="clearfix" id="topMenu">
                 <li class="top"><a href="#">LOGIN or REGISTER</li>
                 <li class="top"><a href="#"><img src="assets/searchIcon.png"/>
                 <li><a href="#">Home</a></li>
@@ -35,20 +42,18 @@
 
         </div>
 
-        <div id="bannerImage" class="section group">
-            <!--<div style="background: yellow;" class="entireBannerBlock">-->
-                <div id="bannerBlock" class="col span_12_of_12">
-                    <p id="bannerPrice">$145.99</p>
-                    <p id="bannerBigText">Pink Shoes<br> 2013 Collection</p>
-                    <p id="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
-                    <ul class="clearfix" id="bannerIcons">
-                        <li><img id="eyeIcon" src="assets/eyeIcon.png"/></li>
-                        <li><img src="assets/starIcon.png"/></li>
-                        <li><img id="shareIcon" src="assets/shareIcon.png"/></li>
-                        <li><img id="cartArrowIcon" src="assets/cartArrowIcon.png"/></li>
-                    </ul>
-                </div>
-            <!--</div>-->
+        <div id="bannerArea" class="section group">
+            <div id="bannerBlock" class="col span_12_of_12">
+                <p id="bannerPrice">$145.99</p>
+                <p id="bannerBigText">Pink Shoes<br> 2013 Collection</p>
+                <p id="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
+                <ul class="clearfix" id="bannerIcons">
+                    <li><img id="eyeIcon" src="assets/eyeIcon.png"/></li>
+                    <li><img src="assets/starIcon.png"/></li>
+                    <li><img id="shareIcon" src="assets/shareIcon.png"/></li>
+                    <li><img id="cartArrowIcon" src="assets/cartArrowIcon.png"/></li>
+                </ul>
+            </div>
         </div>
 
         <ul id="shoppingNav" class="section group">
@@ -221,26 +226,54 @@
             
         
 <script>
+
+/*
+    function displayMenuOnResize(){
+        var topMenu = document.getElementById('topMenu');
+
+        if (window.innerWidth >= '667' ) {
+            topMenu.style.display = 'block';
+        }
+    }
+
     function moveBG(){
-    var amt;
-    var backgroundPosition;
-    var defaultWidth = 1280;
+        var amt;
+        var backgroundPosition;
+        var defaultWidth = 1280;
 
-    amt = (defaultWidth - window.innerWidth)/3.2;
-    backgroundPosition = -amt;
+        amt = (defaultWidth - window.innerWidth)/3.2;
+        backgroundPosition = -amt;
 
-    var bg = document.getElementById('bannerImage');
+        var bg = document.getElementById('bannerArea');
 
-    bg.style.backgroundPosition = -amt + "px 0px";
+        bg.style.backgroundPosition = -amt + "px 0px";
 
-    /*console.log(amt);*/
-}
+    }
+
+    function showHideMenu(){
+        var topMenu = document.getElementById('topMenu');
+
+        var menuDisplay = topMenu.currentStyle ? topMenu.currentStyle.display : getComputedStyle(topMenu, null).display;
+
+        if (menuDisplay == 'block') {
+            topMenu.style.display = "none";
+        } else if (menuDisplay == 'none') {
+            topMenu.style.display = "block";
+        }
+    }
+
+    function resizingWindow(){
+        moveBG();
+        displayMenuOnResize();
+    }
+
+
 
 moveBG();
 
-window.onresize = moveBG;
+window.onresize = resizingWindow;
 
-
+*/
 
 </script>
 
