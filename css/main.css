@@ -45,24 +45,22 @@ html, body {
 .navigation {
   background: #fff;
   padding-left: 8%; }
-  .navigation #menuIcon {
+  .navigation .menuIcon {
     display: none;
-    background: white;
+    background: #fff;
     padding-top: 6px;
-    padding-bottom: 6px; }
-    .navigation #menuIcon div {
+    padding-bottom: 6px;
+    padding-left: 5px; }
+    .navigation .menuIcon div {
       width: 35px;
       height: 5px;
-      background-color: black;
-      /*margin: 0px 0;*/ }
-    .navigation #menuIcon #menuIcon1 {
-      margin-bottom: 6px; }
-    .navigation #menuIcon #menuIcon2 {
-      margin-bottom: 6px; }
+      background: black;
+      margin: 5px 0; }
   .navigation a {
     color: #242424;
     font-size: 19px; }
   .navigation ul {
+    display: block;
     padding: 0px 0px;
     height: 100%; }
     .navigation ul .top {
@@ -467,27 +465,22 @@ input[type=image] {
     #header #loginButtonWrapper {
       display: none; }
 
-  .nav {
-    display: none;
-    padding: 0 0; }
-
-  .nav li {
-    width: 100%;
-    padding: 0 0;
-    border-bottom: 1px solid black;
-    border-left: none;
-    text-align: center; }
-
   .navigation {
-    padding-left: 0; }
+    padding-left: 0;
+    padding: 0 0; }
     .navigation ul {
       display: none;
       padding: 0 0; }
       .navigation ul .top {
         display: list-item; }
-
-  .menuIcon {
-    display: none; } }
+      .navigation ul li {
+        width: 100%;
+        padding: 0 0;
+        border-bottom: 1px solid black;
+        border-left: none;
+        text-align: center; }
+    .navigation .menuIcon {
+      display: block; } }
 @media only screen and (max-width: 650px) {
   #shoppingNav {
     padding-left: 0;

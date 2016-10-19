@@ -66,27 +66,21 @@ html, body {
     background: #fff;
     padding-left: 8%;
 
-    #menuIcon {
+    .menuIcon {
         display: none;
-        background: white;
+        background: #fff;
         padding-top: 6px;
         padding-bottom: 6px;
+        padding-left: 5px;
 
         div {
             width: 35px;
             height: 5px;
-            background-color: black;
-            /*margin: 0px 0;*/
-            
+            background: black;
+            margin: 5px 0;            
         }
 
-        #menuIcon1 {
-            margin-bottom: 6px;
-        }
-
-        #menuIcon2 {
-            margin-bottom: 6px;
-        }
+        
 
 
     }
@@ -97,6 +91,7 @@ html, body {
     }
 
     ul {
+        display: block;
         padding: 0px 0px;
         height: 100%;
 
@@ -692,21 +687,9 @@ input[type=image] {
     }
 
 
-    .nav {
-        display: none;
-        padding: 0 0;
-    }
-
-    .nav li {
-        width: 100%;
-        padding: 0 0;
-        border-bottom: 1px solid black;
-        border-left: none;
-        text-align: center;
-    }
-
     .navigation {
         padding-left: 0;
+        padding: 0 0;
 
         ul {
             display: none;
@@ -715,12 +698,22 @@ input[type=image] {
             .top {
                 display: list-item;
             }
+
+            li {
+                width: 100%;
+                padding: 0 0;
+                border-bottom: 1px solid black;
+                border-left: none;
+                text-align: center;
+            }
+        }
+
+        .menuIcon {
+            display: block;
+
         }
     }
 
-    .menuIcon {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 650px) {
