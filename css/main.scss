@@ -577,9 +577,9 @@ input[type=image] {
 @media only screen and (max-width: 936px) {
 
     .navigation {
-        padding-left: 3%;
+        padding-left: 0%;
 
-        li {
+        ul li {
             padding: 0 2%;
         }
     }
@@ -685,7 +685,7 @@ input[type=image] {
         img {
             display: none;
         }
-        
+
         #loginButtonWrapper {
             display: none;
         }

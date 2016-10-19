@@ -403,8 +403,8 @@ input[type=image] {
 /*----------------------------*/
 @media only screen and (max-width: 936px) {
   .navigation {
-    padding-left: 3%; }
-    .navigation li {
+    padding-left: 0%; }
+    .navigation ul li {
       padding: 0 2%; } }
 @media only screen and (max-width: 910px) {
   #offers {
