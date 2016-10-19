@@ -600,14 +600,25 @@ input[type=image] {
 
 @media only screen and (max-width: 820px) {
 
-    #bannerBlock {
-        margin-left: 5%;
-        text-align: center !important;
+    #bannerArea {
+
+        #bannerBlock {
+            margin-left: 0%;
+            text-align: center !important;
+
+            #bannerIcons {
+                text-align: center;
+            
+                li {
+                    display: inline-block;
+                    float: none;
+                }
+            }
+        }
+        
     }
 
-    #bannerIcons {
-        text-align: center;
-    }
+
 
     #bannerLittleText {
         background: gray;
@@ -615,10 +626,6 @@ input[type=image] {
         opacity: 0.8;
     }
 
-    #bannerIcons li {
-        display: inline-block;
-        float: none;
-    }
 
 }
 
