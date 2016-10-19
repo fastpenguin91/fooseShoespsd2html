@@ -17,7 +17,7 @@ html, body {
 /*----------------------------*/
 
 
-#header {
+.header {
     background: #242424;
     height: 45px;
     padding-left: 8%;
@@ -30,15 +30,15 @@ html, body {
     }
 
     /*I should be able to get rid of this wrapper*/
-    #loginButtonWrapper {
+    .loginButtonWrapper {
         border-left: 2px solid #cccccc;
         display: inline-block;
-        padding-right: 8%;
+        padding-right: 6%;
         height: 100%;
         float: right;
     }
 
-    #loginButton {
+    .loginButton {
         float: right;
         color: #7e7e7e;
         height: 100%;
@@ -125,7 +125,6 @@ html, body {
             float: right;
             padding: 0 3%;
             height: 100%;
-            /*margin-right: 8%;*/
 
             div {
                 line-height: 60px;
@@ -133,12 +132,12 @@ html, body {
         }
     }
 
-    #starText {
+    .starText {
         background-color: #adadad;
         color: white;
     }
 
-    #cartText {
+    .cartText {
         background-color: #57c5a0;
     }
     
@@ -153,7 +152,7 @@ html, body {
 /*#Banner area*/
 /*----------------------------*/
 
-#bannerArea {
+.bannerArea {
     background: url(../assets/fooseLady.jpg) no-repeat;
     height: 460px;
 
@@ -180,50 +179,41 @@ html, body {
         font-size: 20px;
     }
 
-    #bannerIcons li {
-        float: left;
-        padding: 15px;
-        background-color: #fafaf9;
-        margin: 20px 0.5% 0 0.5%;
-        margin-top: 20px;
+    #bannerIcons {
+
+        
+        li {
+            float: left;
+            padding: 15px;
+            background-color: #fafaf9;
+            margin: 20px 0.5% 0 0.5%;
+            margin-top: 20px;
+
+            #eyeIcon {
+                padding: 3px 0px 3px 0px;
+            }
+
+            #shareIcon {
+                padding: 1.5px 0px 1.5px 0px;
+            }
+
+            #cartArrowIcon {
+                padding: 0.5px 0px 0.5px 0px;
+            }
+        }
     }
+
 }
 
 
 
 
 
+/*----------------------------*/
+/*#Shopping Nav area*/
+/*----------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#bannerIcons #eyeIcon {
-    padding: 3px 0px 3px 0px;
-}
-
-#bannerIcons #shareIcon {
-    padding: 1.5px 0px 1.5px 0px;
-}
-
-#bannerIcons #cartArrowIcon {
-    padding: 0.5px 0px 0.5px 0px;
-}
 
 #shoppingNav {
     background: #2e2e2e;
@@ -231,19 +221,26 @@ html, body {
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 10px;
+    
+    .selected .selectedBar {
+        display: block;
+        height: 5px;
+        background: #57c5a0;
+    }
+
+    li {
+        float: left;
+        padding-top: 5px;
+        width: 18%;
+        
+        .shoppingNavliWrapper {
+            padding: 15px 20px;
+            text-align: center;
+        }
+    }
 }
 
-#shoppingNav li {
-    float: left;
-    padding-top: 5px;
-    width: 18%;
-    /*width: 195px;*/
-}
 
-.shoppingNavliWrapper {
-    padding: 15px 20px;
-    text-align: center;
-}
 
 .mainText {
     font-size: 18px;
@@ -271,18 +268,12 @@ html, body {
     display: block;
     height: 2px;
     background: #bcb5a7;
-    /*width: 100%;*/
     margin-left: 8%;
     margin-right: 8%;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.selected .selectedBar {
-    display: block;
-    height: 5px;
-    background: #57c5a0;
-}
 
 #offers {
     display: flex;
@@ -290,7 +281,6 @@ html, body {
     flex-wrap: flex;
     background: #242424;
     color: #fff;
-    /*height: 215px;*/
 }
 
 #offers > div {
@@ -333,10 +323,6 @@ html, body {
     height: 110px;
     margin-left: 8%;
     margin-right: 8%;
-}
-
-.storeItems {
-    background: #ebe7df;
 }
 
 .storeItems li:first-child {
@@ -431,7 +417,6 @@ html, body {
     padding-bottom: 10px;
     margin-right: 13px;
     margin-bottom: 20px;
-    /*height: 180px;*/
 }
 
 .footer {
@@ -471,8 +456,7 @@ html, body {
 }
 
 .footer .footer_section1 div {
-    /*display: inline-block;*/
-    margin: 15px 15px 15px 0px; /*auto; */
+    margin: 15px 15px 15px 0px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 25px;
@@ -489,10 +473,6 @@ html, body {
 
 .footer_section2 div {
     margin: auto;
-    /*display: inline-block;*/
-    /*position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
 }
 
 .footer_section2 .social_icons {
@@ -600,7 +580,7 @@ input[type=image] {
 
 @media only screen and (max-width: 820px) {
 
-    #bannerArea {
+    .bannerArea {
 
         #bannerBlock {
             margin-left: 0%;
@@ -680,7 +660,7 @@ input[type=image] {
 
 @media only screen and (max-width: 667px) {
 
-    #header {
+    .header {
         text-align: center;
         padding-left: 0px;
 
@@ -688,7 +668,7 @@ input[type=image] {
             display: none;
         }
 
-        #loginButtonWrapper {
+        .loginButtonWrapper {
             display: none;
         }
     }
@@ -712,6 +692,10 @@ input[type=image] {
                 border-bottom: 1px solid black;
                 border-left: none;
                 text-align: center;
+            }
+
+            .nav2 {
+                padding: 0 0;
             }
         }
 

@@ -9,11 +9,11 @@
         <title>title</title>
     </head>
     <body>
-        <div id="header">
+        <div class="header">
             <h3>FOOSESHOES</h3>
 
-            <div id="loginButtonWrapper">
-                <div id="loginButton">LOGIN or REGISTER</div>
+            <div class="loginButtonWrapper">
+                <div class="loginButton">LOGIN or REGISTER</div>
             </div>
 
             <img src="assets/searchIcon.png"/>
@@ -22,9 +22,9 @@
 
         <div class="navigation  clearfix">
             <div class="menuIcon" onclick="showHideMenu()">
-                <div id="menuIcon1"></div>
-                <div id="menuIcon2"></div>
-                <div id="menuIcon3"></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <!--id topMenu is for javaScript -->
             <ul class="clearfix" id="topMenu">
@@ -36,22 +36,22 @@
                 <li><a href="#">Pages</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <li class="nav2"><div><img src="assets/starIcon.png"/><span id="starText">30</span></div></li>
-                <li class="nav2"><div><img src="assets/cartIcon.png"/><span id="cartText">10</span></div></li>
+                <li class="nav2"><div><img src="assets/starIcon.png"/><span class="starText">30</span></div></li>
+                <li class="nav2"><div><img src="assets/cartIcon.png"/><span class="cartText">10</span></div></li>
             </ul>
 
         </div>
 
-        <div id="bannerArea" class="section group">
-            <div id="bannerBlock" class="col span_12_of_12">
-                <p id="bannerPrice">$145.99</p>
-                <p id="bannerBigText">Pink Shoes<br> 2013 Collection</p>
-                <p id="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
-                <ul class="clearfix" id="bannerIcons">
-                    <li><img id="eyeIcon" src="assets/eyeIcon.png"/></li>
+        <div id="bannerArea" class="bannerArea  section  group">
+            <div class="bannerBlock" class="col span_12_of_12">
+                <p class="bannerPrice">$145.99</p>
+                <p class="bannerBigText">Pink Shoes<br> 2013 Collection</p>
+                <p class="bannerLittleText">Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat sit amet eu orci. <br> Donec dignissim dolor eget..</p>
+                <ul class="clearfix" class="bannerIcons">
+                    <li><img class="eyeIcon" src="assets/eyeIcon.png"/></li>
                     <li><img src="assets/starIcon.png"/></li>
-                    <li><img id="shareIcon" src="assets/shareIcon.png"/></li>
-                    <li><img id="cartArrowIcon" src="assets/cartArrowIcon.png"/></li>
+                    <li><img class="shareIcon" src="assets/shareIcon.png"/></li>
+                    <li><img class="cartArrowIcon" src="assets/cartArrowIcon.png"/></li>
                 </ul>
             </div>
         </div>
@@ -227,12 +227,12 @@
         
 <script>
 
-    /*Used this to make sure the window displayed the menu on mobile when the screen is automatically below 667px, and when someone re-sizes window to greater than 667px it displays menu. If user shrinks screen, hides navbar, and increases screen above 667 the navbar will stay disappeared.*/
+    /*displayMenuOnResize make sure the window displayed the menu on mobile when the screen is automatically below 667px, and when someone re-sizes window to greater than 667px it displays menu. If user shrinks screen, hides navbar, and increases screen above 667 the navbar style will be set to blank so media queries & css can work properly.*/
     function displayMenuOnResize(){
         var topMenu = document.getElementById('topMenu');
 
         if (window.innerWidth >= '667' ) {
-            topMenu.style.display = 'block';
+            topMenu.style = '';
         }
     }
 
