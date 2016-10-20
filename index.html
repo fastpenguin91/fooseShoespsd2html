@@ -5,28 +5,28 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
-        <title>title</title>
+        <title>FooseShoes</title>
     </head>
     <body>
         <div class="header">
-            <h3>FOOSESHOES</h3>
+            <h3 class="logo">FOOSESHOES</h3>
 
             <div class="loginButtonWrapper">
                 <div class="loginButton">LOGIN or REGISTER</div>
             </div>
 
-            <img src="assets/searchIcon.png"/>
+            <img class="header__search-icon" src="assets/searchIcon.png"/>
 
         </div>
 
         <div class="navigation  clearfix">
             <div class="menuIcon" onclick="showHideMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="menuIcon__bar"></div>
+                <div class="menuIcon__bar"></div>
+                <div class="menuIcon__bar"></div>
             </div>
             <!--id topMenu is for javaScript -->
-            <ul class="nav clearfix" id="topMenu">
+            <ul class="nav main-nav clearfix" id="topMenu">
                 <li class="top"><a href="#">LOGIN or REGISTER</li>
                 <li class="top"><a href="#"><img src="assets/searchIcon.png"/>
                 <li><a href="#">Home</a></li>
@@ -35,8 +35,18 @@
                 <li><a href="#">Pages</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <li class="nav2"><div><img src="assets/starIcon.png"/><span class="starText">30</span></div></li>
-                <li class="nav2"><div><img src="assets/cartIcon.png"/><span class="cartText">10</span></div></li>
+                <li class="nav2">
+                    <div class="icon-container">
+                        <img src="assets/starIcon.png"/>
+                        <span class="nav-icon  starText">30</span>
+                    </div>
+                </li>
+                <li class="nav2">
+                    <div class="icon-container">
+                        <img src="assets/cartIcon.png"/>
+                        <span class="nav-icon  cartText">10</span>
+                    </div>
+                </li>
             </ul>
 
         </div>
@@ -56,7 +66,7 @@
         </div>
 
         <ul class="shoppingNav  section  group">
-            <li class="selected col span_2_of_12">
+            <li class="col span_2_of_12">
                 <span class="bar">
                     <span class="selectedBar"></span>
                 </span>
@@ -101,9 +111,18 @@
         </ul>
 
         <div class="section  group  offers">
-            <div class="col  span_4_of_12"><p>Must Have</p><img src="assets/mustHavebg.png"></div>
-            <div class="col  span_4_of_12"><p>On Sale</p><img src="assets/onSalebg.png"></div>
-            <div class="col  span_4_of_12"><p>Special Offers</p><img src="assets/specialOffersbg.png"></div>
+            <div class="offers__item  col  span_4_of_12">
+                <p class="offers__item__text">Must Have</p>
+                <img class="offers__item__img" src="assets/mustHavebg.png">
+            </div>
+            <div class="offers__item  col  span_4_of_12">
+                <p class="offers__item__text">On Sale</p>
+                <img class="offers__item__img" src="assets/onSalebg.png">
+            </div>
+            <div class="offers__item  col  span_4_of_12">
+                <p class="offers__item__text">Special Offers</p>
+                <img class="offers__item__img" src="assets/specialOffersbg.png">
+            </div>
         </div>
 
         <div class="storeItems">
@@ -113,9 +132,9 @@
                     <a class="showAllBTN" href="#">Show All</a>
                 </div>
                 <div class="newArrivals">
-                    <div><img src="assets/shoe1Full.png"/></div>
-                    <div><img src="assets/shoe2Full.png"/></div>
-                    <div><img src="assets/shoe3Full.png"/></div>
+                    <div class="newArrivals__item"><img src="assets/shoe1Full.png"/></div>
+                    <div class="newArrivals__item"><img src="assets/shoe2Full.png"/></div>
+                    <div class="newArrivals__item"><img src="assets/shoe3Full.png"/></div>
                 </div>
             </div>
             <div>
@@ -124,30 +143,30 @@
                     <a class="showAllBTN" href="#">Show All</a>
                 </div>
                 <div class="newArrivals">
-                    <div><img src="assets/shoe4Full.png"/></div>
-                    <div><img src="assets/shoe5.png"/></div>
-                    <div><p class="bannerPrice2">Out Of <br> Stock</p><img src="assets/shoe6.png"/></div>
+                    <div class="newArrivals__item"><img src="assets/shoe4Full.png"/></div>
+                    <div class="newArrivals__item"><img src="assets/shoe5.png"/></div>
+                    <div class="newArrivals__item"><p class="bannerPrice2">Out Of <br> Stock</p><img src="assets/shoe6.png"/></div>
                 </div>
             </div>
         </div>
 
         <div class="bar2"></div>
 
-        <div class="section3">
+        <div class="more-info">
             <div class="main">
-                <h3>Free Shipping</h3>
+                <h3 class="more-info__title">Free Shipping</h3>
                 <p class="small_section">Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem,</p>
             </div>
 
             <div class="main">
-                <h3>Testimonials</h3>
+                <h3 class="more-info__title">Testimonials</h3>
                 <p class="small_section">
                     vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...]<br><br>
                     - John Doe -
                 </p>
             </div>
             <div class="main  large_section">
-                <h3>Blog News</h3>
+                <h3 class="more-info__title">Blog News</h3>
                 <div>
                     <div class="date">
                         <p>Apr <br> 01</p>
@@ -168,38 +187,38 @@
         </div>
 
         <div class="footer">
-            <div class="footer_section1">
-                <div>
-                    <h3>TEXT WIDGET</h3>
+            <div class="widget-area">
+                <div class="widget-area__section">
+                    <h3 class="widget-area__h3">TEXT WIDGET</h3>
                     <p class="text_widget">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 </div>
 
-                <div class="twitter_widget">
-                    <h3>TWITTER WIDGET</h3>
+                <div class="twitter_widget  widget-area__section">
+                    <h3 class="widget-area__h3">TWITTER WIDGET</h3>
                     <ul>
                         <li>
-                            <p>@ericafustero Why thank you. Your work looks awesome by the way! @treemelody</p>
-                            <p>19 days ago</p>
+                            <p class="twitter_widget_first_p">@ericafustero Why thank you. Your work looks awesome by the way! @treemelody</p>
+                            <p class="twitter_widget_p">19 days ago</p>
                         </li>
                         <li>
-                            <p>@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)</p>
-                            <p>21 days ago</p>
+                            <p class="twitter_widget_p">@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)</p>
+                            <p class="twitter_widget_p">21 days ago</p>
                         </li>
                     </ul>
                 </div>
 
-                <div>
-                    <h3>FLICKR WIDGET</h3>
+                <div class="widget-area__section">
+                    <h3 class="widget-area__h3">FLICKR WIDGET</h3>
                     <img src="assets/FlickrWidget.png">
                 </div>
             </div>
 
-            <div class="footer_section2">
-                <div class="newsLetterForm">
+            <div class="footer_communication">
+                <div class="newsLetterForm footer_communication__section">
                     <input type="text" placeholder="Enter email for newsletter">
                     <input type="image" src="assets/arrowIcon.png" alt="submit">
                 </div>
-                <div class="social_icons">
+                <div class="social_icons footer_communication__section">
                     <img src="assets/fbFull.png">
                     <img src="assets/twitterFull.png">
                     <img src="assets/G_plusFull.png">
@@ -209,12 +228,12 @@
             </div>
 
             <div class="footer_section3">
-                <div class="copyright">
+                <div class="copyright  footer_section3_bottom">
                     <p>Copyright FooseShoes 2013.</p>
                     <p>Designed By EnzoliVolti.</p>
                 </div>
 
-                <div class="footer_nav_links">
+                <div class="footer_nav_links  footer_section3_bottom">
                     <p>Home / Support / Terms & Conditions / FAQ / Contact Us</p>
             </div>
         </div>    
