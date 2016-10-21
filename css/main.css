@@ -82,6 +82,24 @@ li:nth-child(0n+9) {
   font-size: 19px;
   line-height: 60px; }
 
+.navigation {
+  background: #fff;
+  padding-left: 8%; }
+
+.shoppingNav {
+  background: #2e2e2e;
+  display: block;
+  padding: 0 8% 0 8%; }
+
+.shoppingNav li {
+  float: left;
+  padding-top: 5px;
+  width: 18%; }
+
+.shoppingNavliWrapper {
+  padding: 15px 20px;
+  text-align: center; }
+
 .top {
   display: none; }
 
@@ -99,10 +117,6 @@ li:nth-child(0n+9) {
 
 .icon-container {
   line-height: 60px; }
-
-.navigation {
-  background: #fff;
-  padding-left: 8%; }
 
 /*----------------------------*/
 /*#Banner area*/
@@ -151,20 +165,6 @@ li:nth-child(0n+9) {
   display: block;
   height: 5px;
   background: #57c5a0; }
-
-.shoppingNav {
-  background: #2e2e2e;
-  display: block;
-  padding: 0 8% 0 8%; }
-
-.shoppingNav li {
-  float: left;
-  padding-top: 5px;
-  width: 18%; }
-
-.shoppingNavliWrapper {
-  padding: 15px 20px;
-  text-align: center; }
 
 .mainText {
   font-size: 18px;
@@ -281,6 +281,7 @@ li:nth-child(0n+9) {
   font-size: 19px;
   margin-bottom: 18px; }
 
+/*Need to fix this one too */
 .more-info div {
   display: inline-flex; }
 

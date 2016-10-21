@@ -105,6 +105,28 @@ li:nth-child(0n+9) {
     line-height: 60px;
 }
 
+.navigation {
+    background: #fff;
+    padding-left: 8%;
+}
+
+.shoppingNav {
+    background: #2e2e2e;
+    display: block;
+    padding: 0 8% 0 8%;
+}
+
+.shoppingNav li {
+    float: left;
+    padding-top: 5px;
+    width: 18%;
+}
+
+.shoppingNavliWrapper {
+    padding: 15px 20px;
+    text-align: center;
+}
+
 
 .top {
     display: none;
@@ -130,10 +152,7 @@ li:nth-child(0n+9) {
 }
 
 
-.navigation {
-    background: #fff;
-    padding-left: 8%;
-}
+
 
 /*----------------------------*/
 /*#Banner area*/
@@ -199,22 +218,7 @@ li:nth-child(0n+9) {
     background: #57c5a0;
 }
 
-.shoppingNav {
-    background: #2e2e2e;
-    display: block;
-    padding: 0 8% 0 8%;
-}
 
-.shoppingNav li {
-    float: left;
-    padding-top: 5px;
-    width: 18%;
-}
-
-.shoppingNavliWrapper {
-    padding: 15px 20px;
-    text-align: center;
-}
 
 
 .mainText {
@@ -352,6 +356,8 @@ li:nth-child(0n+9) {
     margin-bottom: 18px;
 }
 
+
+/*Need to fix this one too */
 .more-info div {
     display: inline-flex;
 }
